@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.label-box-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #666;
+    user-select: none;
+}
+
+.label-box {
+    position: absolute;
+    box-shadow: 2px 2px 10px rgba(33, 33, 33, .7);
+    overflow: hidden;
+}
+
+.label-box .tag-nail {
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(33, 33, 33, .7);
+}
+
+.label-box .tag-nail.tag-nail-left {
+    left: 10px;
+}
+
+.label-box .tag-nail.tag-nail-right {
+    right: 10px;
+}
+
+.label-box .label-title {
+    text-align: center;
+    line-height: 1;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.label-box .label-content {
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+    text-indent: 2em;
+}
+
+.label-box .label-name {
+    float: right;
+    font-size: 14px;
+    color: #444;
+    padding-right: 32px;
+}
+
+/*顺时针*/
+@-webkit-keyframes clockwiseRotate {
+    0% {
+    }
+    60% {
+        -webkit-transform: rotate(48deg);
+    }
+    80% {
+        -webkit-transform: rotate(43deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes clockwiseDown {
+    0% {
+        -webkit-transform: rotate(45deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+        top: 800px;
+    }
+}
+
+/*逆时针*/
+@-webkit-keyframes anticlockwiseRotate {
+    0% {
+    }
+    60% {
+        -webkit-transform: rotate(-48deg);
+    }
+    80% {
+        -webkit-transform: rotate(-43deg);
+    }
+    100% {
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes anticlockwiseDown {
+    0% {
+        -webkit-transform: rotate(-45deg);
+    }
+    100% {
+        -webkit-transform: rotate(-45deg);
+        top: 800px;
+    }
+}
+
+.clockwise-rotate-animate{
+    -webkit-animation: clockwiseRotate 2.3s 1 forwards ease-out;
+}
+
+.clockwise-down-animate {
+    -webkit-animation: clockwiseDown .5s 1 forwards ease-in;
+}
+
+.anticlockwise-rotate-animate {
+    -webkit-animation: anticlockwiseRotate 2.3s 1 forwards ease-out;
+}
+
+.anticlockwise-down-animate {
+    -webkit-animation: anticlockwiseDown .5s 1 forwards ease-in;
+}
