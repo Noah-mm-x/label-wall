@@ -90,25 +90,32 @@
                 })
             },
             delete: function () {
+                var moving = false;
                 $this.find('.tag-nail').on('click', function () {
                     var _self = $(this);
                     if(_self.hasClass('tag-nail-right')){
+                        if(moving) return false;
+                        moving = true;
                         $this.css('webkitTransformOrigin', '0 0');
                         $this.addClass('clockwise-rotate-animate');
                         $this.on('webkitAnimationEnd', function () {
                             $this.addClass('clockwise-down-animate');
                             $this.on('webkitAnimationEnd', function () {
                                 $this.hide();
+                                moving = false;
                             })
                         })
                     }
                     if(_self.hasClass('tag-nail-left')){
+                        if(moving) return false;
+                        moving = true;
                         $this.css('webkitTransformOrigin', $this.width() + 'px 0');
                         $this.addClass('anticlockwise-rotate-animate');
                         $this.on('webkitAnimationEnd', function () {
                             $this.addClass('anticlockwise-down-animate');
                             $this.on('webkitAnimationEnd', function () {
                                 $this.hide();
+                                moving = false;
                             })
                         })
                     }
