@@ -136,27 +136,27 @@
         'top': '100',
         'backgroundColor': '#ffc',
         'rotateDeg': '5',
-        'title': '天气预报',
-        'content': '哈佛滑动我安抚客户打款时发挥的开发和打卡机舒服哈多少分',
-        'name': 'angle'
+        'title': '薛之谦',
+        'content': '又出新歌啦  《潮流季》',
+        'name': '左手|码'
     });
     $box2.labelWall({
         'left': '600',
         'top': '300',
         'backgroundColor': '#cfc',
         'rotateDeg': '3',
-        'title': '今日资讯',
-        'content': '哈佛滑动我安抚客户打款时发挥的开发和打卡机舒服哈多少分',
-        'name': 'angle'
+        'title': '权利的游戏',
+        'content': '听说 《权利的游戏》第七季 正在筹拍 😀 haha~',
+        'name': '左手|码'
     });
     $box3.labelWall({
         'left': '200',
         'top': '400',
         'backgroundColor': '#cff',
         'rotateDeg': '-3',
-        'title':'天天快乐',
-        'content':'哈佛滑动我安抚客户打款时发挥的开发和打卡机舒服哈多少分',
-        'name':'angle'
+        'title':'一天~',
+        'content':'这一天又在 代码中度过了 ╮(╯▽╰)╭',
+        'name':'左手|码'
     });
 
 })();
